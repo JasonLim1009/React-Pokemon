@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Peralta&family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Peralta', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background-color: rgb(211, 238, 197);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+}
+
+.left-content,
+.right-content {
+    flex-basis: 50%;
+}
+
+.left-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+    grid-gap: 2rem;
+}
+
+.card {
+    width: 100%;
+    background-color: #b7c1d3;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    background-color: #6a98ed;
+}
+
+.right-content {
+    width: 50%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    top: 50px;
+    right: 10px;
+}
+
+.right-content img {
+    margin: 2rem;
+    padding: 7%;
+    height: 150px;
+}
+
+.right-content h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.abilities {
+    height: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.abilities .group {
+    background-color: #6a98ed;
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 12px;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+.abilities .group:hover {
+    background-color: #1d64e8;
+}
+
+.base-stat {
+    margin-top: 2rem;
+}
+
+.btn-group {
+    display: flex;
+}
+
+.btn-group button {
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #6a98ed;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-group button:hover {
+    background-color: #1d64e8;
+}
+
+.box {
+    height: 100%;
+    width: 75%;
+    background-color: white;
+    border: 3px solid rgb(34, 53, 139);
+    text-align: left;
+    padding: 3%;
+}
+
+.img-box {
+    height: 100%;
+    width: 75%;
+    background-color: gainsboro;
+    border: 3px solid rgb(117, 103, 70);
+    border-radius: 20px;
+}
+
+.header {
+    text-align: left;
+    padding: 2% 5% 0%;
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 5% 5%;
+    }
+
+    .left-content .card{
+        width: 170%;
+    }
+
+    .right-content {
+        padding: 20% 30%;
+    }
+
+    .right-content .box {
+        padding: 25%;
+        margin: 2%;
+        border-radius: 30px;
+    }
+
+    .right-content .img-box {
+        padding: 15%;
+        margin: 2%;
+        height: 100px;
+        width: 100px;
+    }
+    
+    .abilities .group {
+        padding: 1% 12%;
+    }
+
+    .btn-group button {
+        padding: 5% 25%;
+    }
+}
